@@ -33,8 +33,9 @@ const Footer = () => {
         <p className="mt-5">Phone: 1-888-810-7663</p>
         <p className="mt-5">Email: sales@diamondroof.on.ca</p>
       </div>
-      <p className="text-sm text-center">
-        &copy; Diamond Steel Roofing Systems. All Rights reserved.
+      <p className="text-sm text-center pb-5">
+        &copy; {new Date().getFullYear()} Diamond Steel Roofing Systems. All
+        Rights reserved.
       </p>
     </div>
   );

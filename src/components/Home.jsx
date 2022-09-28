@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Lightbox from "react-18-image-lightbox";
 import "react-18-image-lightbox/style.css";
 import carousel1 from "../images/carousel1.jpg";
-import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 import Reviews from "./Reviews";
 
@@ -48,7 +48,7 @@ export default class Home extends Component {
         <div className="w-full h-screen text-white relative flex items-center justify-center">
           <img
             src={carousel1}
-            alt="image of a house"
+            alt="carousel1"
             className="h-full w-full object-cover -z-0"
           />
           <div className="absolute w-full h-full top-0 left-0 bg-black/50"></div>
@@ -94,26 +94,9 @@ export default class Home extends Component {
             )}
           </motion.div>
         </div>
-        <div className="border-b-4 mt-5 border-b-slate-200"></div>
-        <div className="flex items-center justify-center mt-5 mb-10">
-          <Link to="/product">
-            <button className="bg-gray-200 mx-1 sm:mx-5 shadow-lg shadow-black text-black px-10 py-3 rounded-lg hover:bg-slate-800 hover:text-white ease-in-out duration-500">
-              Our Product
-            </button>
-          </Link>
-          <Link to="/gallery">
-            <button className="bg-gray-200 mx-1 sm:mx-5 shadow-lg shadow-black text-black px-10 py-3 rounded-lg hover:bg-slate-800 hover:text-white ease-in-out duration-500">
-              Our Gallery
-            </button>
-          </Link>
-          <Link to="/contact">
-            <button className="bg-gray-200 mx-1 sm:mx-5 shadow-lg shadow-black text-black px-10 py-3 rounded-lg hover:bg-slate-800 hover:text-white ease-in-out duration-500">
-              Contact Us
-            </button>
-          </Link>
-        </div>
-        <div className="border-t-8 border-t-gray-700"></div>
-        <div>
+
+        <div className="text-4xl text-center ">
+          <h5 className="my-6">Testimonials</h5>
           <Reviews />
         </div>
       </div>

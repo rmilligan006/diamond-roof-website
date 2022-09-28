@@ -30,8 +30,7 @@ const data = [
 const Reviews = () => {
   return (
     <>
-      <div className="bg-gray-200 mb-6">
-        <h5 className="text-4xl text-center pb-20">Testimonials</h5>
+      <div className="h-full">
         <Swiper
           className=""
           spaceBetween={35}
@@ -45,12 +44,15 @@ const Reviews = () => {
         >
           {data.map(({ name, review }, index) => {
             return (
-              <SwiperSlide key={index} className="p-24 w-[50%] bg-gray-500">
+              <SwiperSlide
+                key={index}
+                className="p-24 mt-2 mb-2 w-full h-screen bg-gray-500"
+              >
                 <div className=""></div>
-                <h5 className="w-[80%] block m-3 font-bold text-white">
+                <h5 className="w-[80%]  mx-auto font-bold text-white flex justify-center items-center">
                   {name}
                 </h5>
-                <small className="w-[80%] h-[50%] block m-3  text-base text-white">
+                <small className="w-[80%] h-[200px]  mx-auto text-base text-white flex justify-center items-center">
                   {review}
                 </small>
               </SwiperSlide>

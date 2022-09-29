@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-50 flex-wrap w-full h-[130px] md:h-[200px]  justify-center items-stretch border-b-2 bg-white">
+      <div className="sticky top-0 z-50 flex-wrap w-full h-[130px] md:h-[180px]  justify-center items-stretch border-b-2 bg-white">
         <div className="flex items-center justify-center">
           <motion.img
             initial={{ opacity: 0, scale: 1 }}

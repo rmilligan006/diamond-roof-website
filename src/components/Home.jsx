@@ -7,15 +7,15 @@ import { motion } from "framer-motion";
 import Reviews from "./Reviews";
 
 const images = [
-  require("../images/carousel1.jpg"),
+  require("../images/gallery/commercial/commercial6.png"),
   require("../images/carousel2.jpg"),
-  require("../images/carousel3.jpg"),
+  require("../images/gallery/customTile/custom4.png"),
   require("../images/carousel4.jpg"),
-  require("../images/carousel5.jpg"),
+  require("../images/gallery/commercial/commercial10.png"),
   require("../images/carousel6.jpg"),
-  require("../images/carousel7.jpg"),
+  require("../images/gallery/commercial/commercial13.png"),
   require("../images/carousel8.jpg"),
-  require("../images/carousel9.jpg"),
+  require("../images/gallery/customTile/custom9.png"),
 ];
 
 export default class Home extends Component {
@@ -48,7 +48,7 @@ export default class Home extends Component {
         <div className="w-full h-screen text-white relative flex items-center justify-center">
           <img
             src={carousel1}
-            alt="carousel1"
+            alt="house"
             className="h-full w-full object-cover -z-0"
           />
           <div className="absolute w-full h-full top-0 left-0 bg-black/50"></div>

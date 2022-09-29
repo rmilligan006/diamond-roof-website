@@ -17,7 +17,6 @@ const images = [
   require("../../images/gallery/residential/residential13.png"),
   require("../../images/gallery/residential/residential14.png"),
   require("../../images/gallery/residential/residential15.png"),
-  require("../../images/gallery/residential/residential16.png"),
 ];
 
 export default class Residental extends Component {
@@ -32,12 +31,48 @@ export default class Residental extends Component {
     const { photoIndex, isOpen } = this.state;
 
     return (
-      <div className="w-[200px]">
-        <img
-          src={require("../../images/gallery/residential/residential16.png")}
-          alt=""
-          onClick={() => this.setState({ isOpen: true })}
-        />
+      <div className="flex items-center justify-center flex-col">
+        <div className="bg-gray-600 rounded-lg shadow-xl text-center max-w-[500px] flex items-center justify-center mb-2 mt-10">
+          <p className="text-4xl text-white py-5 px-10">Residential</p>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-2 py-10 px-10">
+          <img
+            src={require("../../images/gallery/residential/residential1.png")}
+            alt="Click here to see slideshow!"
+            onClick={() => this.setState({ isOpen: true })}
+            className="cursor-pointer h-[250px]"
+          />
+          <img
+            src={require("../../images/gallery/residential/residential2.png")}
+            alt="Click here to see slideshow!"
+            onClick={() => this.setState({ isOpen: true })}
+            className="cursor-pointer h-[250px]"
+          />
+          <img
+            src={require("../../images/gallery/residential/residential3.png")}
+            alt="Click here to see slideshow!"
+            onClick={() => this.setState({ isOpen: true })}
+            className="cursor-pointer h-[250px]"
+          />
+          <img
+            src={require("../../images/gallery/residential/residential4.png")}
+            alt="Click here to see slideshow!"
+            onClick={() => this.setState({ isOpen: true })}
+            className="cursor-pointer h-[250px]"
+          />
+          <img
+            src={require("../../images/gallery/residential/residential15.png")}
+            alt="Click here to see slideshow!"
+            onClick={() => this.setState({ isOpen: true })}
+            className="cursor-pointer  h-[250px]"
+          />
+          <img
+            src={require("../../images/gallery/residential/residential6.png")}
+            alt="Click here to see slideshow!"
+            onClick={() => this.setState({ isOpen: true })}
+            className="cursor-pointer h-[250px]"
+          />
+        </div>
         {isOpen && (
           <Lightbox
             mainSrc={images[photoIndex]}
